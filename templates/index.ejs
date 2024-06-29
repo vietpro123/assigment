@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+  </head>
+  <style>
+    body{
+        background-image: url('https://wallpapercave.com/wp/wp3636963.png');
+        background-size: cover;
+    }
+    
+  </style>
+  <body>
+    <main class="container">
+        <header class="row">
+            <%- include('partials/header.ejs') %>
+            <h2 class="username">Pokemon</h2>
+        </header>
+        <div id="app">
+            <section class="row" id="board">
+               
+            </section>
+            <h2 class="diem" style="color: rgb(0, 255, 85);">Điểm :<span class="countGame">0</span></h2>
+            <h3 class="gameTime" style="color: rgb(255, 1, 1);">Thời gian: <span class="time">0</span>
+            
+            </h3>
+            <section class="row">
+                <div class="col" id="reset">
+                    <hr>
+                    <button class="btn btn-primary" id="reset">Chạy lại Game</button>
+                    <button class="btn btn-danger" id="cancel">Đóng Game</button>
+                    
+                </div>
+                
+            </section>
+        </div>
+        <footer class="row">
+            <%- include('partials/footer.ejs') %>
+        </footer>
+   </main>
+   <script src="assets/main.bundle.js"></script>
+   <script src="assets/vendors~main.chunk.js"></script>
+   <%- include('partials/foot.ejs') %>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%- include('partials/head.ejs') %>
+    <style>
+      body{
+          background-image: url('https://anhanime.com/wp-content/uploads/2022/07/Hi%CC%80nh-ne%CC%82%...p.jpg');
+          background-size: cover;
+      }
+   
+    </style>
+  </head>
+  <body>
+     <main class="container">
+          <header class="row">
+            <%- include('partials/header.ejs') %>
+          </header>
+          <section class="row" id="app">
+            <div class="col-6 offset-3 mt-3">
+              <form action="board">
+                <div class="form-group">
+                  <label for="username">Tên của bạn</label>
+                  <input type="text"
+                    class="form-control" name="username" id="username" aria-describedby="UsernameHelpId" placeholder="Username">
+                  <small id="UsernameHelpId" class="form-text text-muted invisible">Không đủ kí tự yêu cầu vui lòng thêmm !!</small>
+                </div>
+                <div class="form-group">
+                  <hr>
+                  <button type="button" id="play" class="btn " style="background-color: yellow;">Bắt đầu</button> 
+                </div>
+              </form>
+            </div>
+          </section>
+          <footer class="row">
+            <%- include('partials/footer.ejs') %>
+          </footer>
+     </main>
+
+     <script src="assets/user.bundle.js"></script>
+     <script src="assets/vendors~user.chunk.js"></script>
+     <%- include('partials/foot.ejs') %>
+  </body>
+</html>
